@@ -229,13 +229,12 @@ a {
 	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	border-bottom: dotted 1px;
 	/* color: #8cd1a8; */
-	color: transparent;
+	color: #6f7577;
 	text-decoration: none;
 }
 
 a:hover {
 	border-bottom-color: transparent !important;
-	color: #8cd1a8 !important;
 	text-decoration: none;
 }
 
@@ -2113,12 +2112,15 @@ section.special div .about p.one_skill {
 section.special .about .one_skill>div span {
 	display: inline-block;
 	width: 8em;
-	transition: all 0.5s;
+	transition: all 0.2s;
 }
 
 section.special .about .one_skill>div span:hover {
 	color: #7aca9a;
 	cursor: pointer;
+	font-weight: 400;
+	margin-top: -4px;
+	transform: rotate(5deg);
 }
 
 
@@ -2156,6 +2158,7 @@ header.major {
 	text-align: center;
 }
 
+
 header.major h1,
 header.major h2,
 header.major h3,
@@ -2183,9 +2186,13 @@ header.major h6:after {
 	position: relative;
 	width: 4em;
 }
+header.major h1{
+	 font-weight: 500;
+}
 
-header.major p {
+#top_text {
 	margin-top: 0;
+	font-weight: 100 !important;
 }
 
 /* Form */
@@ -2450,7 +2457,8 @@ input[type="radio"]+label:before {
 }
 
 .image img {
-	display: block;
+	/* display: block; */
+	display: none;
 }
 
 .image.left {
@@ -2596,12 +2604,11 @@ ul.icons-grid:after {
 
 .main .container .content ul li {
 	width: 50%;
-	height: 300px;
+	height: 330px;
 	overflow: hidden;
 	cursor: pointer;
 	transition: all 0.3s;
 	border: 0.5px solid transparent;
-
 }
 
 .main .container .content ul li:hover {
@@ -2609,22 +2616,42 @@ ul.icons-grid:after {
 	border-radius: 2px;
 }
 
+.main .container .content ul li h3 {
+	transition: all 0.3s;
+}
+
+.main .container .content ul li:hover h3 {
+	transform: rotate(5deg);
+	color: #8cd1a8;
+}
+
+.main .container .content ul li:hover a {
+	color: rgb(61, 61, 61);
+	font-weight: 500;
+}
+
+.main .container .content ul li:hover .myWork {
+	border: 0.3px solid transparent;
+}
+
 .main .container .content ul li .myWork {
 	width: 100%;
-	height: 180px;
+	height: 190px;
 	overflow: hidden;
 	margin: 7px 0;
+	border: 0.3px solid rgba(223, 223, 223, 0.863);
+	transition: all 0.5s;
 }
 
 .main .container .content ul li p {
-	font-size: 0.8em;
+	font-size: 0.7em;
 	line-height: 20px;
-	margin: 0;
+	margin: 2px 0;
 }
 
 .main .container .content ul li .myWork img {
 	width: 100%;
-	height: 900px;
+	/* height: 900px; */
 	transition: all 4s;
 }
 
@@ -2735,6 +2762,25 @@ ul.actions.fit li>* {
 
 ul.actions.fit.stacked {
 	width: 100%;
+}
+
+
+.last {
+	animation: twinkle 1s infinite alternate-reverse ;
+	font-weight: 800;
+	/* background-color: #03779e; */
+	display: inline-block;
+}
+
+@keyframes twinkle {
+	from {
+		transform: rotate(-5deg);
+	}
+
+	to {
+		color: white;
+		transform: rotate(5deg);
+	}
 }
 
 @media screen and (max-width: 480px) {
