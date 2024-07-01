@@ -177,8 +177,8 @@ html {
 html {
 	background-color: #313a3d;
 	background-attachment: fixed, fixed;
-	/* background-image: url("images/overlay.png"), url("../../images/bg.jpg"); */
-	background-image: url("images/overlay.png"), url("../../images/white2.jpg");
+	background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+	/* background-image: url("images/overlay.png"), url("../../images/white2.jpg"); */
 	background-position: top left, center center;
 	background-repeat: repeat, none;
 	background-size: auto, cover;
@@ -2189,13 +2189,13 @@ header.major h6:after {
 header.major h1{
 	 font-weight: 500;
 }
-#top_title{	
+/* #top_title{	
 	color: rgb(53, 53, 53) !important;
-}
+} */
 #top_text {
 	margin-top: 0;
 	font-weight: 100 !important;
-	color: rgb(53, 53, 53) !important;
+	/* color: rgb(53, 53, 53) !important; */
 }
 
 /* Form */
@@ -2777,12 +2777,12 @@ ul.actions.fit.stacked {
 
 @keyframes twinkle {
 	from {
-		transform: rotate(-5deg);
+		transform: rotate(-3deg);
 	}
 
 	to {
-		color: rgb(53, 53, 53);
-		transform: rotate(5deg);
+		/* color: rgb(224, 224, 224); */
+		transform: rotate(3deg);
 	}
 }
 
