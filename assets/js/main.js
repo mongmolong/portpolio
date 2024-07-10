@@ -1,12 +1,11 @@
 window.addEventListener('load', function() {
-	// 로딩 문구를 숨기고 나머지 내용을 표시
-	document.getElementById('loading').style.display = 'none';
-	// document.querySelectorAll('section').style.display = 'block';
+    setTimeout(function() {
+        document.getElementById('loading').style.display = 'none';     
+    }, 1500); 
 });
 
 
 (function($) {
-
 	var	$window = $(window),
 		$body = $('body'),
 		$html = $('html');
