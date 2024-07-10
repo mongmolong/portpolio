@@ -2181,11 +2181,9 @@ header.major h6 {
 	position: relative;
 }
 
-
 .container header.major h2 {
-	/* color: #175997; */
 	animation: twinkle 1s infinite alternate;
-	transition: all 0.3s;
+	transition: all 0.7s;
 }
 
 @keyframes twinkle {
@@ -2197,7 +2195,6 @@ header.major h6 {
 		color: #80c3f0;
 	}
 }
-
 
 
 header.major h1:after,
@@ -2813,7 +2810,7 @@ ul.actions.fit.stacked {
 
 	to {
 		transform: rotate(3deg);
-		color:rgb(255, 255, 255);
+		color: rgb(255, 255, 255);
 	}
 }
 
@@ -3164,12 +3161,16 @@ button:disabled,
 	white-space: nowrap;
 	width: 4em;
 	position: absolute;
-	z-index:10;
+	z-index: 10;
+	transform: rotate(180deg);
+	transition: all 0.5s;
 }
 
 .main .goto-next:hover {
 	/* background-color: rgba(144, 144, 144, 0.15); */
-	background-color: #6da8cf;
+	background-color: #175997;
+	transform: rotate(360deg);
+
 }
 
 /* Header */
