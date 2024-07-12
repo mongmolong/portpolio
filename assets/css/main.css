@@ -2731,8 +2731,10 @@ ul.icons-grid:after {
 	transform: scale(1.2);
 	margin-top: 0;
 }
-
-
+.preparing{
+	pointer-events: none;
+	user-select: none;
+}
 
 /* Actions */
 
