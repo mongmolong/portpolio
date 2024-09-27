@@ -105,6 +105,11 @@ section {
 	display: block;
 }
 
+a{
+	text-decoration: none !important;
+	outline: none !important;
+}
+
 body {
 	line-height: 1;
 }
@@ -2633,21 +2638,6 @@ ul.icons-grid li h3 {
 	margin: 0;
 }
 
-/* 십자선 */
-/* ul.icons-grid li:nth-child(2n + 1) {
-	box-shadow: inset -1px 0 0 0 #dddddd, 1px 0 0 0 #dddddd;
-}
-
-ul.icons-grid li:nth-child(2n + 3):before {
-	background: #dddddd;
-	content: '';
-	display: block;
-	height: 2px;
-	margin-top: -1.5em;
-	position: absolute;
-	width: 100%;
-} */
-
 ul.icons-grid:after {
 	clear: both;
 	content: '';
@@ -2663,7 +2653,7 @@ ul.icons-grid:after {
 
 .main .container .content ul li {
 	width: 50%;
-	height: 330px;
+	height: 350px;
 	overflow: hidden;
 	cursor: pointer;
 	transition: all 0.3s;
@@ -2681,14 +2671,10 @@ ul.icons-grid:after {
 }
 
 .main .container .content ul li:hover h3 {
-	font-size: 1.1em;
+	/* font-size: 1.1em; */
 	transform: rotate(5deg);
 	color: #5797c2;
 }
-
-/* .main .container .content ul li:hover a {
-	font-weight: 4000;
-} */
 
 .main .container .content ul li:hover .myWork {
 	border: 0.3px solid transparent;
@@ -2721,7 +2707,7 @@ ul.icons-grid:after {
 .main .container .content ul li.study_up .mystudy img,
 .main .container .content ul li .myWork img {
 	width: 100%;
-	transition: all 4s;
+	transition: all 7s;
 }
 
 .main .container .content ul li.study_up:hover .mystudy>img {
@@ -2730,8 +2716,23 @@ ul.icons-grid:after {
 }
 
 .main .container .content ul li:hover .myWork img {
-	margin-top: -100px;
+	margin-top: -600px;
 }
+
+
+/* gitLink */
+#gitLink{
+	padding: 5px 0;
+	transition: all 0.3s;
+}
+.main .container .content ul li:hover #gitLink {
+	margin-left: 10px;
+}
+.main .container .content ul li:hover #gitLink span{	
+	margin-left: 10px;
+	font-style: italic;
+}
+
 
 /* mystudy */
 .main .container .content ul.study li .mystudy img {
